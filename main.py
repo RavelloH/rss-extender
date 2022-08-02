@@ -155,3 +155,4 @@ oldtime = oldtimes.childNodes[0].data
 alter('rss.xml',str(oldtime),str(newtime))
 print('[进程6/6]RSS时间更新完成:%s=>%s' %(oldtime,newtime))
 print('[RSS更新完成]')
+print('生成了%s与%s' %(file_name,filename))
