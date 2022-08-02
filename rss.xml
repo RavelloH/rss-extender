@@ -45,11 +45,14 @@
 		<item>
 			<title>新主题上线</title>
 			<link>https://ravelloh.github.io/articles/20210701/</link>
-			<description><![CDATA[<br/><br/><span style="font-size:12px; color: gray;">(Feed generated with <a href="https://fetchrss.com" target="_blank">FetchRSS</a>)</span>]]></description>
+			<description>最近做好了这个新主题并应用到博客，
+因为之前的那个主题是基于Hexo的，自己现在也不太想用，干脆自己做了个
+这个主题虽说比较简陋，但毕竟是自己做出来的，各方面都很了解，比之前那个四零八乱的好多了。
+</description>
 			<pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
 			<guid isPermaLink="false">https://ravelloh.github.io/articles/20210705/</guid>
 		</item>
-	    <item>
+		<item>
 			<title>反转药水效果</title>
 			<link>https://ravelloh.github.io/articles/20200816/</link>
 			<description><![CDATA[<br/><br/><span style="font-size:12px; color: gray;">(Feed generated with <a href="https://fetchrss.com" target="_blank">FetchRSS</a>)</span>]]></description>
