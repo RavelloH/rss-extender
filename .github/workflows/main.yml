@@ -43,8 +43,8 @@ jobs:
 
       - name: Commit files
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "github-action"
+          git config --local user.email "ravellohh@gmail.com"
+          git config --local user.name "RavelloH"
           git add -A
           git commit -m "`date '+%Y-%m-%d %H:%M:%S'`"
           git status
