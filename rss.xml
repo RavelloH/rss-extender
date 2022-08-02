@@ -14,6 +14,13 @@
 		</image>
 
 		<item>
+			<title>论静态页中伪动态的实现</title>
+			<link>https://ravelloh.github.io/articles/20220708/</link>
+			<description>最近半年里，我先后完成了PSGameSpider与EverydayNews这两个项目，它们都是基于GithubPages的静态页，但其中都多多少少可以实现动态站的部分功能，如识别网址后的？xxx=xxx并作出反馈（EverydayNews），或者动态根据Github中的仓库内容渲染页面（PSGameSpider）。不过，这实质上也并没有改变这作为静态站的本质，因为这不符合动态站“个性化为不同用户展示页面”的特点。实际上，“伪动态”这个名词是类比“伪静态”而产生的，但不同于伪静态中可以用服务器正则判断并生成网页，静态站中想要实现部分动态站的效果就只能靠在用户的设备上执行脚本，并使用已有的静态资源做出反馈。下面是其中一部分功能的实现效果及方法:</description>
+			<pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20220708/</guid>
+		</item>
+		<item>
 			<title>Python实现网络爬虫</title>
 			<link>https://ravelloh.github.io/articles/20220323/</link>
 			<description>最近在参与一个数据收集的项目，需要大量获取图像及链接等，用人力显然是完成不过来了，于是索性就做个爬虫，一劳永逸了。这里因为项目比较小，对效率要求不大，就选择了使用Python而不是C语言。(也因为Python用起来更省事)本文所含代码可直接跳转#代码查看</description>
@@ -55,7 +62,7 @@
 		<item>
 			<title>反转药水效果</title>
 			<link>https://ravelloh.github.io/articles/20200816/</link>
-			<description><![CDATA[<br/><br/><span style="font-size:12px; color: gray;">(Feed generated with <a href="https://fetchrss.com" target="_blank">FetchRSS</a>)</span>]]></description>
+			<description>由于一些神奇的BUG特性，高等级效果将会使原效果被反转，而这就使得了一些原版不存在的操作变成了可能。例如，创造模式的玩家不免疫增益效果，只免疫负面效果，而这就使得了如果可以给予创造玩家一种增益效果但实际是负面效果，也是能对创造模式玩家造成伤害的。除此以外，对跳跃提升药水运用相同的原理也有奇效玩家将会无法跳跃</description>
 			<pubDate>Sun, 16 Aug 2020 00:00:00 +0000</pubDate>
 			<guid isPermaLink="false">https://ravelloh.github.io/articles/20210705/</guid>
 		</item>
