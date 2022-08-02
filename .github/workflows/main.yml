@@ -49,6 +49,7 @@ jobs:
           git config --local user.name "Ravello-H"
           git add -A
           git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" || exit #动态提交信息
+          git branch -m master main
           git status
           git push -f origin main
         env:
