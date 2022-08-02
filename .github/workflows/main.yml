@@ -24,8 +24,9 @@ jobs:
         uses: actions/checkout@v2
       - name: 'Git set'
         run: |
+             rm -rf .git/
              git init
-             git pull
+             git remote add origin https://github.com/${{ github.repository }}
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
@@ -49,7 +50,7 @@ jobs:
           git add -A
           git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" || exit #动态提交信息
           git status
-          git push -f
+          git push -f origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
