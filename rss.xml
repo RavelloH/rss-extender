@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Articles | RavelloH’s Blog</title>
+		<description>A Blog by RavelloH</description>
+		<pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+		<link>https://ravelloh.github.io/articles/index.html</link>
+		<atom:link href="http://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml" rel="self" type="application/rss+xml" />
+		<generator>https://fetchrss.com</generator>
+		<image>
+			<link>https://ravelloh.github.io/articles/index.html</link>
+			<url>https://www.google.com/s2/favicons?domain=https://ravelloh.github.io</url>
+			<title>Articles | RavelloH’s Blog</title>
+		</image>
+
+		<item>
+			<title>论静态页中伪动态的实现</title>
+			<link>https://ravelloh.github.io/articles/20220708/</link>
+			<description>最近半年里，我先后完成了PSGameSpider与EverydayNews这两个项目，它们都是基于GithubPages的静态页，但其中都多多少少可以实现动态站的部分功能，如识别网址后的？xxx=xxx并作出反馈（EverydayNews），或者动态根据Github中的仓库内容渲染页面（PSGameSpider）。不过，这实质上也并没有改变这作为静态站的本质，因为这不符合动态站“个性化为不同用户展示页面”的特点。实际上，“伪动态”这个名词是类比“伪静态”而产生的，但不同于伪静态中可以用服务器正则判断并生成网页，静态站中想要实现部分动态站的效果就只能靠在用户的设备上执行脚本，并使用已有的静态资源做出反馈。下面是其中一部分功能的实现效果及方法:</description>
+			<pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20220708/</guid>
+		</item>
+		<item>
+			<title>Python实现网络爬虫</title>
+			<link>https://ravelloh.github.io/articles/20220323/</link>
+			<description>最近在参与一个数据收集的项目，需要大量获取图像及链接等，用人力显然是完成不过来了，于是索性就做个爬虫，一劳永逸了。这里因为项目比较小，对效率要求不大，就选择了使用Python而不是C语言。(也因为Python用起来更省事)本文所含代码可直接跳转#代码查看</description>
+			<pubDate>Wed, 23 Mar 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20220323/</guid>
+		</item>
+		<item>
+			<title>JS递归遍历伪数组</title>
+			<link>https://ravelloh.github.io/articles/20220206/</link>
+			<description>最近在用getElementsByTagName获取标签内容时，发现与getElementById/ClassName等不同，直接document.getElementsByTagName('').id修改页面中所有标签的id时没有反应...console.log输出一下，发现输出的是[li,li,li,li,li]这种形式的伪数组(集合)</description>
+			<pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20220206/</guid>
+		</item>
+		<item>
+			<title>Minecraft命令实现在线统计</title>
+			<link>https://ravelloh.github.io/articles/20210719/</link>
+			<description>首先要实现在线时间统计，需要先定义时间。所以在这里 需要先创建几个稍后要用到的计分板：/scoreboard objectives add timetick dummy/scoreboard objectives add times dummy/scoreboard objectives add timem dummy/scoreboard objectives add timeh dummy/scoreboard objectives add timed dummy顺次显示的是 秒-分-时-天。计时器的思路是这样的：使用循环命令方块为timetick加分，则每秒可以增加20（每秒命令方块运行20次）当timetick为20时，为times加1并设置timetick为0。当times为60时，为timem加1并设置times为0。当timem为60时，为timeh加1并设置timem为0。...以此类推。所以在这里 需要使用命令方块组+目标选择器进行运算:循环: scoreboard players add @a timetick 1连锁: scoreboard players add @a[scores={timetick=20..}] times 1连锁: scoreboard players set @a[scores={timetick=20..}] timetick 0连锁: scoreboard players add @a[scores={times=60..}] timem 1连锁: scoreboard players set @a[scores={times=60..}] times 0连锁: scoreboard players add @a[scores={timem=60..}] timeh 1连锁: scoreboard players set @a[scores={timem=60..}] timem 0连锁: scoreboard players add @a[scores={timeh=24..}] timed 1连锁: scoreboard players set @a[scores={timeh=24..}] timeh 0最后 再加一个title用于显示即可循环： execute as @a at @s run title @p actionbar
+                    [{"text":"在线时间:","color":"green","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"timed","name":"@p"},"color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"天","color":"gold","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"timeh","name":"@p"},"color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"小时","color":"gold","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"timem","name":"@p"},"color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"分","color":"gold","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"score":{"objective":"times","name":"@p"},"color":"gray","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false},{"text":"秒","color":"gold","bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}]（考虑到多人游戏的情况 这里添加了一个execute用于保证显示正确的对象）当我们搭建好全部命令方块并运行后，不难发现虽然计时器正常，但却没有显示值为0的项目:这是因为未被赋值的计分板项目默认不显示，需要手动设置为0：/scoreboard players set @p times 0/scoreboard players set @p timem 0/scoreboard players set @p timeh 0/scoreboard players set @p timed 0之后即可正常使用。</description>
+			<pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20210719/</guid>
+		</item>
+		<item>
+			<title>CSS+JS实现页面切换过渡</title>
+			<link>https://ravelloh.github.io/articles/20210705/</link>
+			<description>因为自己最近在忙这个博客的建设，所以自己就想给这个blog做一个切换页面时的过渡。可在网上却都没什么符合这blog主题的，于是自己动手丰衣足食，自己就做了现在的这种效果。</description>
+			<pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20210705/</guid>
+		</item>
+
+	</channel>
+</rss>
