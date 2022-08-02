@@ -1,0 +1,2 @@
+# RSS
+基于fetchrss.com的RSS爬虫，可实现深度爬取文章摘要、突破fetchrss只生成最近五篇文章、去除原来存在于原始RSS中的广告等功能
