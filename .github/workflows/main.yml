@@ -24,9 +24,8 @@ jobs:
         uses: actions/checkout@v2
       - name: 'Git set'
         run: |
-             rm -rf .git/
              git init
-             git remote add origin https://github.com/${{ github.repository }}
+             git pull
       - name: 'Set up Python'
         uses: actions/setup-python@v1
         with:
@@ -44,14 +43,13 @@ jobs:
 
       - name: Commit files
         run: |
-          git diff
           git config --local user.email "dr_hamilton@foxmail.com"
           git config --local user.name "Ravello-H"
           git add -A
-          git commit -m "`date '+%Y-%m-%d %H:%M:%S'`" || exit #动态提交信息
-          git branch -m master main
+          git commit -m "`date '+%Y-%m-%d %H:%M:%S'`"
           git status
           git push -f origin main
+          git status
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
