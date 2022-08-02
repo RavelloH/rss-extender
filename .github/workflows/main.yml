@@ -53,7 +53,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
-deploy:
+  deploy:
     needs: rss-make
     environment:
       name: github-pages
