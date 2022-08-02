@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
-## Author: RavelloH
-### RSS Maker
+## 使用有问题请到github.com/ravelloh/RSS提ISSUE
+### Author: RavelloH
+#### MICENCE: MIT
+##### RSS Maker
 
 from xml.dom.minidom import parse
 from urllib.request import urlopen
@@ -22,10 +24,27 @@ def alter(file,old_str,new_str):
     os.remove(file)
     os.rename("%s.bak" % file, file)
 
-# 下载原始rss
+# 初始化 
 print('[进程0/6]正在初始化...')
+rsslink = 'https://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml' # 此处为原始rss
+if 'originRss.xml' in os.listdir('.'):
+    os.remove('originRss.xml')
+    filename = download(rsslink,'./originRss.xml')
+    print('\n[进程0/6]原始RSS已更新')
+else:
+    filename = download(rsslink,'./originRss.xml')
+    download(rsslink,'./rss.xml')
+    l1 = []
+    with open(r"./rss.xml", 'r') as fp:
+        l1 = fp.readlines()
+    with open(r"./rss.xml", 'w') as fp:
+        for number, line in enumerate(l1):
+            if number not in [15,16,17,18,19,20,21]:
+                fp.write(line)
+    print('\n[进程0/6]初始化完毕，已构筑文件')
+
+# 下载原始rss
 try:
-    rsslink = 'https://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml'
     rsscontext = urlopen(rsslink)
     print('[进程1/6]RSS拉取成功')   
 except:
@@ -74,7 +93,6 @@ filltext = '''
 </image>
 <item>
 '''
-filename = download('https://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml','./originRss.xml')
 # 查找对应行
 with open(filename, 'r') as file:
     line = file.readline()
