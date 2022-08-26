@@ -3,7 +3,7 @@
 	<channel>
 		<title>Articles | RavelloH’s Blog</title>
 		<description>A Blog by RavelloH</description>
-		<pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+		<pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
 		<link>https://ravelloh.github.io/articles/index.html</link>
 		<atom:link href="http://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml" rel="self" type="application/rss+xml" />
 		<generator>https://fetchrss.com</generator>
@@ -13,6 +13,13 @@
 			<title>Articles | RavelloH’s Blog</title>
 		</image>
 
+		<item>
+			<title>静态站实现全站搜索</title>
+			<link>https://ravelloh.github.io/articles/20220825/</link>
+			<description>全站搜索这一功能我想加入到我的博客中不是一年两年的事了。但因自己现在弃用Hexo转而自己做博客，这两年搜索这个功能就一直未能实现。最近自己偶然有新想法，就给实现了。效果还不错，现在搭配Github Actions使用，可以实现新文章自动索引，实现了自动化。</description>
+			<pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20220825/</guid>
+		</item>
 		<item>
 			<title>论静态页中伪动态的实现</title>
 			<link>https://ravelloh.github.io/articles/20220708/</link>
