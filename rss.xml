@@ -3,7 +3,7 @@
 	<channel>
 		<title>Articles | RavelloH’s Blog</title>
 		<description>A Blog by RavelloH</description>
-		<pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+		<pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
 		<link>https://ravelloh.github.io/articles/index.html</link>
 		<atom:link href="http://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml" rel="self" type="application/rss+xml" />
 		<generator>https://fetchrss.com</generator>
@@ -13,6 +13,13 @@
 			<title>Articles | RavelloH’s Blog</title>
 		</image>
 
+		<item>
+			<title>Virgule.js现已发布</title>
+			<link>https://ravelloh.github.io/articles/20221126/</link>
+			<description>22年暑假时，我把博客首页的打字机特效换成了类似于现在这种，但是当时也是随便做出来玩玩的，不仅功能单一，结构臃肿，用了530行js也只能达到让主页有两句循环的轮播，实在太不优雅。今年十月初我决定重制这个功能将其从530行压缩到370行，并在原有的基础上加入了跳过空格、自定义速度、快捷引用目标等功能，并将其封装为函数，现在想要使用只需一句：virgule(target,context,speed)太优雅了。项目现已开源。@Github:RavelloH/virgule.js</description>
+			<pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20221126/</guid>
+		</item>
 		<item>
 			<title>静态站实现全站搜索</title>
 			<link>https://ravelloh.github.io/articles/20220825/</link>

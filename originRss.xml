@@ -3,7 +3,7 @@
 	<channel>
 		<title>Articles | RavelloH’s Blog</title>
 		<description>A Blog by RavelloH</description>
-		<pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+		<pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
 		<link>https://ravelloh.github.io/articles/index.html</link>
 		<atom:link href="http://fetchrss.com/rss/62e7476cbc64503f4d1c8c3262e748042496e12e1401c6e3.xml" rel="self" type="application/rss+xml" />
 		<generator>https://fetchrss.com</generator>
@@ -13,6 +13,13 @@
 			<title>Articles | RavelloH’s Blog</title>
 		</image>
 
+		<item>
+			<title>Virgule.js现已发布</title>
+			<link>https://ravelloh.github.io/articles/20221126/</link>
+			<description><![CDATA[<br/><br/><span style="font-size:12px; color: gray;">(Feed generated with <a href="https://fetchrss.com" target="_blank">FetchRSS</a>)</span>]]></description>
+			<pubDate>Sat, 26 Nov 2022 00:00:00 +0000</pubDate>
+			<guid isPermaLink="false">https://ravelloh.github.io/articles/20221126/</guid>
+		</item>
 		<item>
 			<title>静态站实现全站搜索</title>
 			<link>https://ravelloh.github.io/articles/20220825/</link>
@@ -40,13 +47,6 @@
 			<description><![CDATA[<br/><br/><span style="font-size:12px; color: gray;">(Feed generated with <a href="https://fetchrss.com" target="_blank">FetchRSS</a>)</span>]]></description>
 			<pubDate>Sun, 06 Feb 2022 00:00:00 +0000</pubDate>
 			<guid isPermaLink="false">https://ravelloh.github.io/articles/20220206/</guid>
-		</item>
-		<item>
-			<title>Minecraft命令实现在线统计</title>
-			<link>https://ravelloh.github.io/articles/20210719/</link>
-			<description><![CDATA[<br/><br/><span style="font-size:12px; color: gray;">(Feed generated with <a href="https://fetchrss.com" target="_blank">FetchRSS</a>)</span>]]></description>
-			<pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
-			<guid isPermaLink="false">https://ravelloh.github.io/articles/20210719/</guid>
 		</item>
 
 	</channel>
