@@ -38,10 +38,8 @@ jobs:
       - name: 'Working'
         run: 
           python main.py #运行主程序
-      - name: Record time  
-        run: echo `date` > date.log
-
       - name: Commit files
+        continue-on-error: True
         run: |
           git config --local user.email "dr_hamilton@foxmail.com"
           git config --local user.name "Ravello-H"
